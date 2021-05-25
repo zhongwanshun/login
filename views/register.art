@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/www/stylesheets/register.css">
+</head>
+
+<body background="/www/images/webp1.webp">
+    <div id="login">
+        <h1>注册</h1>
+        <form action="/register" method="POST">
+            <input id="username" type="text" name="name" placeholder="用户名"><label id="name_trip">
+   
+        <input id="password" type="password" name="password" placeholder="密码"><label id="password_trip">
+     
+        <input id="surePassword" type="password"  placeholder="确认密码"><label id="surePassword_trip">
+      
+        <input type="text"  placeholder="别名">
+        
+        <label id="check_chinesename">
+  
+        <input type="text" placeholder="请输入手机号" autofocus="autofocus" autocomplete="off" οninput="if(value.length>11)value=value.slice(0,11)"  οnkeyup="this.value=this.value.replace(/\D/g,'')"/>
+  
+        <input type="text"  placeholder="性别"><label id="sex_trip"></label>
+
+            <input type="text" placeholder="班级">
+
+            <input type="text" placeholder="爱好"><label id="hobby_trip"></label>
+            <p>
+                <input id="email" placeholder="请输入电子邮件" type="email" required>
+                <label id="emil_trip"></label>
+            </p>
+            <button class="but" type="submit">登录</button>
+            <br>
+            <button class="re" type="reset">重置</button>
+        </form>
+    </div>
+    <script src="/www/javascripts/register.js"></script>
+</body>
+
+</html>
